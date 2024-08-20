@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Trigger Documentation Update
       run: |
-        repo_name="ddanielgc/static-documentation-stack"
+        repo_name="${{ github.repository }}"
         branch_name="${GITHUB_REF##*/}"
         curl -X POST \
           -H "Accept: application/vnd.github.v3+json" \
