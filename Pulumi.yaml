@@ -1,0 +1,11 @@
+name: g-taxonomy-products-categorizer
+runtime:
+  name: python
+  options:
+    toolchain: pip
+    virtualenv: venv
+description: A Python program to deploy a serverless application on AWSA Python program to deploy a serverless application on AWS
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: serverless-aws-python
